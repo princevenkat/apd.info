@@ -1,0 +1,37 @@
+{
+	"name": "APD info",
+	"version": "1.0.0",
+	"description": "This is a dummy description",
+	"main": "index.js",
+	"dependencies": {
+		"bootstrap": "^4.0.0",
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.3.1"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"browser-sync": "^2.23.6",
+		"browser-sync-webpack-plugin": "^2.0.1",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-babel": "^7.0.1",
+		"gulp-imagemin": "^4.1.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-uglify": "^3.0.0",
+		"gulp-uncss": "^1.0.6",
+		"gulp-useref": "^3.1.4",
+		"webpack": "^3.11.0"
+	},
+	"repository": {
+		"type": "",
+		"url": ""
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "MIT",
+	"readme": "This is a dummy readme"
+}
