@@ -2,7 +2,7 @@ const 	gulp			= require('gulp'),
 		autoprefixer 	= require('gulp-autoprefixer'),
 		babel 			= require('gulp-babel'),
 		imagemin 		= require('gulp-imagemin'),
-		sass 			= require('gulp-sass'),
+		sass            = require("gulp-sass");
 		sourcemaps		= require('gulp-sourcemaps'),
 		uglify 			= require('gulp-uglify'),
 		gulpif 			= require('gulp-if'),
@@ -32,7 +32,7 @@ const 	gulp			= require('gulp'),
 					.pipe(sourcemaps.init())
 					.pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
 					.pipe(uncss({
-						html: ['index.html']
+						html: ['dist/index.html', 'dist/**.*html']
 					}))
 					.pipe(autoprefixer({
 						browsers: ['last 2 versions']
