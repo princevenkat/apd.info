@@ -29,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/princevenkat/apd.info.git"
+    "url": "git+https://github.com/princevenkat/APD.info.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/princevenkat/apd.info/issues"
+    "url": "https://github.com/princevenkat/APD.info/issues"
   },
-  "homepage": "https://github.com/princevenkat/apd.info#readme"
+  "homepage": "https://github.com/princevenkat/APD.info#readme"
 }
