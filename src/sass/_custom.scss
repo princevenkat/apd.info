@@ -4,9 +4,9 @@
 
 @font-face {
   font-family: 'adventsans';
-  src:  url("../css/fonts/adventsans.woff2?v=4.7.0") format("woff2"),
-  url("../css/fonts/adventsans.woff?v=4.7.0") format("woff"),
-  url("../css/fonts/adventsans.ttf?v=4.7.0") format("truetype"),
+  src:  url("../fonts/adventsans.woff2?v=4.7.0") format("woff2"),
+  url("../fonts/adventsans.woff?v=4.7.0") format("woff"),
+  url("../fonts/adventsans.ttf?v=4.7.0") format("truetype"),
 }
 .tite{
  color: $site-font-color; 
@@ -18,6 +18,10 @@ body{
   line-height: $line-height-base;
   margin:0;
   padding:0;
+  overflow-x:hidden;
+}
+a{
+  color:$green-base;
 }
 a,a:hover,a:focus,a:active{
       transition: all 0.5s ease;
@@ -989,6 +993,7 @@ $break-large: 1024px;
             }
         }
     }
+
     ol,.links_2{
         margin:$twenty 0;
         padding: 0;
@@ -1002,6 +1007,20 @@ $break-large: 1024px;
                 color: #006534;
             }
         }*/
+    }
+
+    .pdf_list{
+        margin:$twenty 0;
+        padding: 0;         
+        li{
+            
+            &:before{
+                font-family: "FontAwesome";
+                content: "\f1c1" !important;
+                margin-right: 10px;
+                color: #da251c;
+            }
+        }
     }
 }
 
