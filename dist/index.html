@@ -688,17 +688,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bundle.js"></script>
 <script type="text/javascript">
-  window.onload = function(){
-    var imgs = document.getElementsByTagName('img');
+jQuery("document").ready(function($){
+var imgs = document.getElementsByTagName('img');
     for( i=0; i<imgs.length; i++){if (window.CP.shouldStopExecution(1)){break;}
          imgEl = imgs[i];
          rgb = getAverageRGB(imgEl);
         imgEl.parentNode.style.backgroundColor = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
         //imgEl.parentNode.style.color = 'rgb('+(255-rgb.r)+','+(255-rgb.g)+','+(255-rgb.b)+')';
     }
-window.CP.exitedLoop(1);
-
-
+    window.CP.exitedLoop(1);
 
     function getAverageRGB(imgEl) {
 
@@ -745,7 +743,9 @@ window.CP.exitedLoop(2);
 
         return rgb;
     }
-}
+
+});
+
 </script>
 </body>
 </html>

@@ -563,13 +563,14 @@ article{
 .front_big_post{
   .big_thumb{
 
-    height: 400px;
+    max-height: 400px;
     /*width: 100%;*/
     position: relative;
     overflow: hidden;
     display: block;
     /*border: 1px solid rgba(0, 0, 0, 0.2);
     background: #f8f8f8;*/
+    text-align: center;
 
     a{
       display:block;
@@ -578,12 +579,15 @@ article{
 
         
 
-        img{
+        
+     }
+    
+    img{
           max-height: 100%;
           max-width: 100%;
           width: auto;
           height: auto;
-          position: absolute;
+          /*position: absolute;*/
           top: 0;
           bottom: 0;
           left: 0;
@@ -591,8 +595,6 @@ article{
           margin: auto ;    
         }
      
-     }
-    
     
 
     .image_copyright{

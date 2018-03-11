@@ -11,6 +11,7 @@ const 	gulp			= require('gulp'),
 		webpack 		= require('webpack'),
 		browserSync 	= require('browser-sync').create();
 		var $ = require("jquery");
+		var $ = require('min-jquery')
 
 
 
@@ -74,3 +75,6 @@ const 	gulp			= require('gulp'),
 			gulp.watch('src/**/*.+(html|js)', ['copy']);
 					
 		});
+
+
+		
