@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
 @font-face {
@@ -12,13 +13,13 @@ body{
   font-family: Roboto;
   color: $site-font-color;
   font-size: $font-size-base;
-  line-height: $line-height;
+  line-height: $line-height-base;
   margin:0;
   padding:0;
   overflow-x:hidden;
 }
-a {
-    color: #006534;
+a{
+  color:$green-base;
 }
 a,a:hover,a:focus,a:active{
       transition: all 0.5s ease;
@@ -37,21 +38,15 @@ ul {
         }
     }
 }
-.navbar{
-    min-height: 40px !important;
-    position: inherit !important;
-  } 
-.navbar-nav > li > a{
-  line-height: 22px;
-}
+
 header{
   margin: 0;
   padding: $ten 0;
   /*background:url(../images/headerbg_1.png) left bottom no-repeat;*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 .logo{
   padding: $ten 0 0;
   margin: 0;
@@ -78,7 +73,7 @@ header{
   }
 }
 
-   
+    
   
     
 .logo_right{
@@ -108,10 +103,11 @@ header{
 }
 .navbar{
   margin-bottom:0;
+  min-height: 40px;
   border: 0;
   border-radius: $border-radius-0;
   a{
-    color: set-text-color($main-color) !important;
+    color: set-text-color($green-base) !important;
   }
 
 
@@ -121,49 +117,50 @@ background: $green-base;
 border-color: $green-base;
 }
 .navbar-inverse {
-	.navbar-nav {
-		 li {
+  .navbar-nav {
+     li {
        text-transform: uppercase;
        font-weight: $alert-link-font-weight;
        letter-spacing: 1px;
       a{
         padding-left: $twentyfive;
         padding-right: $twentyfive;
+        line-height:22px;
       }
-		a:hover{
+    a:hover{
         background: $yellow-base;
       }
-		 }
-	}
+     }
+  }
   .navbar-collapse{
     padding: 0;
   }
 }
 .navbar-inverse {
-	.navbar-nav {
-		 li {
-			a:focus{
+  .navbar-nav {
+     li {
+      a:focus{
         background: $yellow-base;
       }
-		 }
+     }
         
         
       >.active {
-			>a {
-				color: $white-color;
-				background-color: $yellow-base;
-				&:hover {
-					color: $white-color;
-					background-color: $yellow-base;
-				}
-				&:focus {
-					color: $white-color;
-					background-color: $yellow-base;
-				}
-			}
-		}  
+      >a {
+        color: $white-color;
+        background-color: $yellow-base;
+        &:hover {
+          color: $white-color;
+          background-color: $yellow-base;
+        }
+        &:focus {
+          color: $white-color;
+          background-color: $yellow-base;
+        }
+      }
+    }  
         
-	}
+  }
 }
 
 section {
@@ -213,6 +210,7 @@ section {
 
   h4{
     padding-left:35px;
+
     font-weight: bold;
     &:before{
       position: absolute;
@@ -270,6 +268,13 @@ section {
       list-style: none;
       float: left;
       display: none;
+      margin: 10px 0;
+
+        article{
+          border:1px rgba(0, 0, 0, 0.07) solid !important;
+          padding:15px;
+        }
+
       }
   }
 .load_more_btn{
@@ -296,25 +301,20 @@ section {
 }
 article{
   .aritle_block{
-    border: 1px solid rgba(0, 0, 0, 0.2);
     text-align: left;
     position: relative;
-    margin-bottom: $fifteen;
+   
 
     .thumb{
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+         
           a{
             height: 200px;
             width: 100%;
             position: relative;
             overflow: hidden;
             display: block;
-            border: 1px #eee solid;
+           
             img{
-                max-height: 100%;
-                max-width: 100%;
-                width: auto;
-                height: auto;
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -339,7 +339,7 @@ article{
       transition: all 0.5s ease;
     }
     .aritle_block_content{
-      padding: $fifteen;
+      
       h4{
         font-size: $padding-large-horizontal;
         font-weight: 800;
@@ -371,7 +371,7 @@ article{
         display: -webkit-box;
         max-width: 100%;
         max-width: 100%;
-        height: 65px;
+        height: 60px;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -563,27 +563,28 @@ article{
 .front_big_post{
   .big_thumb{
 
-    height: 400px;
-    /*width: 100%;*/
+    /*height: 400px;
+    width: 100%;*/
     position: relative;
     overflow: hidden;
     display: block;
     /*border: 1px solid rgba(0, 0, 0, 0.2);
     background: #f8f8f8;*/
-
+text-align: center;
     a{
       display:block;
-      height: 100%;
+      max-height: 400px;
+      
       position:relative;
 
         
 
         img{
-          max-height: 100%;
+          max-height: 400px;
           max-width: 100%;
           width: auto;
           height: auto;
-          position: absolute;
+          
           top: 0;
           bottom: 0;
           left: 0;
@@ -775,18 +776,18 @@ footer{
         padding:$padding-base-vertical 0;
         &:first-child {
             padding-top: 0;
-		}  
+    }  
         &:nth-child(2) {
-			padding-top: 0;
-		}  
+      padding-top: 0;
+    }  
         &:nth-child(even) {
-			width: 50%;
-			float: right;
-		}
-			&:nth-child(odd) {
-			width: 50%;
-			float: left;
-		}  
+      width: 50%;
+      float: right;
+    }
+      &:nth-child(odd) {
+      width: 50%;
+      float: left;
+    }  
           
           
         a{
@@ -855,14 +856,40 @@ footer{
 $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // This will generate unwanted results!
 @media (min-width: 480px) and #{$retina} {
+
+
+
+.front_big_post .big_thumb a {
+    display: block;
+    max-height: 200px;
+    min-height: 200px;
+    position: relative;
+    img{
+    position:absolute;
+    }
+}
+.front_big_post .big_thumb .image_copyright{
+  padding: 10px;
+  background:#000;
+}
+.list li{    
+    padding: 0; 
+    margin: 5px 0;
+}
+.list li article{    
+    padding: 5px; 
+}
   .navbar-form {
-    width: 100%;
+    width: 90%;
+    float: none;
+    margin: 10px auto 10px;
   }
   .footer_address,.footer_links,.footer_s_links{
     margin: $twenty 0;
   }
   .social_links{
-    padding: 0;
+    margin: 5px 18px;
+    padding:0;
   }
   header{
     background: $green-base;
@@ -919,20 +946,21 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
     
    article{
   .aritle_block{
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    
     text-align: left;
     position: relative;
+    padding:15px;
     margin-bottom: $fifteen;
 
     .thumb{
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          
           a{
             height: auto;
             width: 100%;
             position: relative;
             overflow: hidden;
             display: block;
-            border: 1px #eee solid;
+            
             img{
                 position: relative;
                 top: 0;
@@ -1002,10 +1030,10 @@ $breakpoint-tablet: 768px;
   header{
     background: $white-color;
     /*background:url(../images/headerbg_1.png) left bottom no-repeat;*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
       
     .logo{
       margin-left: 0;
@@ -1052,8 +1080,8 @@ $breakpoint-tablet: 768px;
     }
   }
   .navbar-inverse {
-  	.navbar-nav {
-  		 li {
+    .navbar-nav {
+       li {
          text-transform: uppercase;
          font-weight: $alert-link-font-weight;
          letter-spacing: 1px;
@@ -1063,11 +1091,11 @@ $breakpoint-tablet: 768px;
           padding-left: $ten;
           padding-right: $ten;
         }
-  			a:hover{
+        a:hover{
           background: $yellow-base;
         }
-  		 }
-  	}
+       }
+    }
     .navbar-collapse{
       padding: 0;
     }
@@ -1075,8 +1103,7 @@ $breakpoint-tablet: 768px;
   .navbar-form{
     width: 180px;
   }
-  
-
+    
     
 
 }
@@ -1084,15 +1111,15 @@ $breakpoint-tablet: 768px;
 $breakpoint-980: 980px;
 @media (min-width: $breakpoint-980) {
 .f-nav {
-        position: fixed !important;
+        position: fixed;
         z-index: 9999;
         width: 100%;
         right: 0;
         top: 0;
 }
   .navbar-inverse {
-  	.navbar-nav {
-  		 li {
+    .navbar-nav {
+       li {
          text-transform: uppercase;
          font-weight: $alert-link-font-weight;
          letter-spacing: 1px;
@@ -1100,11 +1127,11 @@ $breakpoint-980: 980px;
           padding-left: $ten;
           padding-right: $ten;
         }
-  			a:hover{
+        a:hover{
           background: $yellow-base;
         }
-  		 }
-  	}
+       }
+    }
     .navbar-collapse{
       padding: 0;
     }
@@ -1171,13 +1198,18 @@ $break-large: 1024px;
         margin: $twenty 0;
         padding: 0;
         li{
+            margin-bottom: $ten;
            
             &:before{
                 font-family: "FontAwesome";
-                content: "\f0a9";
-                margin-right: 10px;
+                content: "\f0a9";                
                 color: #006534;
+                float:left;
                
+            }
+            span{
+                margin-left: 20px;
+                display: block;
             }
         }
     }
@@ -1257,7 +1289,7 @@ $break-large: 1024px;
       bottom: 0;
       left: 0;
       border-left: 1px solid $yellow-base;
-	  
+    
     }
   }
   li {
@@ -1322,6 +1354,53 @@ $break-large: 1024px;
   }
 }
 
+
+.greg_bg_with_radius{
+    label{
+        display: none;
+    }
+    select{
+        padding: $five;
+        width: 100%;
+    }
+
+}
+
+textarea.form-control{
+        height: 80px;   
+}
+
+
+.navbar-form .input-group .form-control{
+  border:0;
+  height: 34px;
+}
+
+
+.pp_pic_holder .pp_content .pp_next, 
+.pp_pic_holder .pp_content .pp_previous {
+    display: none !important;
+}
+
+.prev-article,.next-article{
+    display: block;
+    margin: 0 0 15px;
+}
+
+.search_posts{
+  
+}
+
+.not_found {
+      h1{
+        margin-bottom:0;
+        font-size: 200px;
+        padding-bottom:0;
+        font-weight: bold;
+        line-height: 1;
+      }
+   
+  }
 
 .greg_bg_with_radius{
     label{
