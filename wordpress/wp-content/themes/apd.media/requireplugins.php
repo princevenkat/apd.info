@@ -103,10 +103,10 @@ function my_theme_register_required_plugins() {
 			'is_callable'        => '',
 		),
 		
-		/*array(
-			'name'               => 'RSS Image Feed',
-			'slug'               => 'rss-image-feed',
-			'source'             => get_stylesheet_directory() . '/plugins/rss-image-feed.zip', 
+		array(
+			'name'               => 'PDP',
+			'slug'               => 'pdf-print',
+			'source'             => get_stylesheet_directory() . '/plugins/pdf-print.zip', 
 			'required'           => true,
 			'version'            => '',
 			'force_activation'   => false, 
@@ -115,7 +115,7 @@ function my_theme_register_required_plugins() {
 			'is_callable'        => '',
 		),
 		
-		array(
+		/*array(
 			'name'               => 'RSS Feed',
 			'slug'               => 'rss',
 			'source'             => get_stylesheet_directory() . '/plugins/wp-custom-post-rss-feed.zip', 

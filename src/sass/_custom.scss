@@ -867,7 +867,8 @@ section {
     min-height: 200px;
     position: relative;
     img{
-    position:absolute;
+      /*position:absolute;*/
+      max-height:200px;
     }
 }
 .front_big_post .big_thumb .image_copyright{
