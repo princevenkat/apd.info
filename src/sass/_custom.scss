@@ -857,6 +857,9 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 // This will generate unwanted results!
 @media (min-width: 480px) and #{$retina} {
 
+section {
+    padding: 15px 0;
+}
 
 
 .front_big_post .big_thumb a {
