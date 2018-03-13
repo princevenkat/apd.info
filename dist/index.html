@@ -80,11 +80,7 @@
                 <div class="big_heading">
                   <h3>Justitia et Pax: Nein zur Abschaffung eines gebührenfinanzierten Service PublicJustitia et Pax: Nein zur Abschaffung eines gebührenfinanzierten Service Public</h3>
                 </div>
-                <div class="date">
-                  <span><i class="fa fa-map-marker"></i> Fribourg/Schweiz</span> | 
-                  <span><i class="fa fa-calendar"></i> 23. Jan 2018</span> | 
-                  <span class="hidden-xs"><a href="#">Gesundheit & Ethik</a></span>
-                </div>
+                <div class="date"><span><i class="fa fa-map-marker"></i> Fribourg/Schweiz</span> | <span><i class="fa fa-calendar"></i> 23. Jan 2018</span> | <span><a href="#">Gesundheit & Ethik</a></span></div>
                 <div class="description">
                   <p>Die Schweiz lebe von ihrer kulturellen und sprachlichen Vielfalt, heisst es in der Medienmitteilung von Justitia et Pax. Wesentlich für den gesellschaftlichen Zusammenhalt und für das Funktionieren der Demokratie sei, dass sich diese Vielfalt auch im Angebot des Service Public widerspiegle Die Schweiz lebe von ihrer kulturellen und sprachlichen Vielfalt, heisst es in der Medienmitteilung von Justitia et Pax. Wesentlich für den gesellschaftlichen Zusammenhalt und für das Funktionieren der Demokratie sei, dass sich diese Vielfalt auch im Angebot des Service Public widerspiegle </p>
                 </div>
@@ -665,9 +661,9 @@
       </div>
       <div class="col-sm-3">
         <div class="footer_address">
-          <h4>impressum</h4>
+          <h4>Impressum</h4>
           <div class="footer_address">
-            <p class="">Jens-Oliver Mohr (verantwortich),</p>
+            <p class="">Jens-Oliver Mohr (verantwortich)</p>
             <p><i class="fa fa-phone"></i> +49 711 44819 14</p>
             <p><i class="fa fa-envelope"></i>  info@apd.info</p>
           </div>
@@ -686,12 +682,10 @@
   </div>
 </footer>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bundle.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-
+  window.onload = function(){
     var imgs = document.getElementsByTagName('img');
     for( i=0; i<imgs.length; i++){if (window.CP.shouldStopExecution(1)){break;}
          imgEl = imgs[i];
@@ -699,7 +693,9 @@
         imgEl.parentNode.style.backgroundColor = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
         //imgEl.parentNode.style.color = 'rgb('+(255-rgb.r)+','+(255-rgb.g)+','+(255-rgb.b)+')';
     }
-    window.CP.exitedLoop(1);
+window.CP.exitedLoop(1);
+
+
 
     function getAverageRGB(imgEl) {
 
@@ -746,10 +742,7 @@ window.CP.exitedLoop(2);
 
         return rgb;
     }
-
-
-});
-
+}
 </script>
 </body>
 </html>
