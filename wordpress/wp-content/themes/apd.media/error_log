@@ -1,0 +1,2 @@
+[06-Mar-2018 13:01:01 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/wssproje/public_html/freelancer/apd-media/wordpress/wp-content/themes/apd.media/index.php on line 6
+[06-Mar-2018 13:01:05 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/wssproje/public_html/freelancer/apd-media/wordpress/wp-content/themes/apd.media/index.php on line 6
