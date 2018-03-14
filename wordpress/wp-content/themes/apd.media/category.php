@@ -41,8 +41,8 @@ $image = get_sub_field('art_image');
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'medium' );
 ?>
 
-  <?php if($img_src){?><img src="<?php echo esc_url( $img_src ); ?>"  class="img-responsive"  /><?php } else {?>
-       <img src="<?php bloginfo('template_directory'); ?>/images/No_Image_Available.jpg"  alt="<?php the_title();?>" class="img-responsive"  style=" height: 100px;
+  <?php if($img_src){?><img src="<?php echo esc_url( $img_src ); ?>"  class="img-responsive average-background-colorize"  /><?php } else {?>
+       <img src="<?php bloginfo('template_directory'); ?>/images/No_Image_Available.jpg"  alt="<?php the_title();?>" class="img-responsive average-background-colorize"  style=" height: 100px;
     width: 120px;" />
   <?php } ?>
 <?php endwhile; ?>

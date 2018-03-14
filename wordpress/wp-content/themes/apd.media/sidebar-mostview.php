@@ -20,7 +20,7 @@ $image = get_sub_field('art_image');
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'full' );
 ?>
 
-                <img src="<?php echo esc_url( $img_src ); ?>" alt="image"  />
+                <img src="<?php echo esc_url( $img_src ); ?>" alt="image" class="img-responsive average-background-colorize"  />
                  
 <?php endwhile; ?>
 <?php endif; ?>  </a>

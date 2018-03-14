@@ -23,7 +23,7 @@
       </div>
       <div class="col-sm-6 hidden-xs">
         <div class="logo_right pull-right">
-          <div class="left"><img src="images/logo-icon.png" /></div>
+          <div class="left"><a href="https://www.adventisten.de/" target="_blank"><img src="images/apd-right.svg" /></a></div>
           <div class="right">APD ist eine Einrichtung der Freikirche der <br />Siebenten-Tags-Adventisten in Deutschland <sup>TM</sup></div>
         </div>
       </div>
@@ -170,7 +170,8 @@
 <script src="js/bundle.js"></script>
 <script type="text/javascript">
   window.onload = function(){
-    var imgs = document.getElementsByTagName('img');
+    var imgs = document.getElementsByClassName('average-background-colorize');
+    //var imgs = document.getElementsByTagName('img');
     for( i=0; i<imgs.length; i++){if (window.CP.shouldStopExecution(1)){break;}
          imgEl = imgs[i];
          rgb = getAverageRGB(imgEl);

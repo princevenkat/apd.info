@@ -31,7 +31,7 @@ $image = get_sub_field('art_image');
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'full' );
 
 ?><div class="big_thumb gallery">
-	  <?php if($img_src) {?><a href="<?php echo esc_url( $img_src ); ?>" rel="prettyPhoto[gallery]" title="<?php echo $art_copyright; ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive" /></a><?php } ?>
+	  <?php if($img_src) {?><a href="<?php echo esc_url( $img_src ); ?>" rel="prettyPhoto[gallery]" title="<?php echo $art_copyright; ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive average-background-colorize" /></a><?php } ?>
 	  <span class="image_copyright"><?php echo $art_title; ?>
 	  <copy><?php echo $art_copyright; ?></copy></span>
        </div>
@@ -117,7 +117,7 @@ $image = get_sub_field('art_image', $next->ID);
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'medium' );
 ?>               
 <?php if($img_src) { ?>
-<a href="<?php echo esc_url( get_permalink( $next->ID ) ); ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive" /></a><?php } ?>   
+<a href="<?php echo esc_url( get_permalink( $next->ID ) ); ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive average-background-colorize" /></a><?php } ?>   
 <?php endwhile; ?>
 <?php endif; ?>                    
 
@@ -155,7 +155,7 @@ $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'medium' );
 ?>  
 <?php if($img_src) { ?>  
 <a href="<?php echo esc_url( get_permalink( $prev->ID ) ); ?>">           
-<img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive" /><?php } ?>
+<img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive average-background-colorize" /><?php } ?>
 </a>
 <?php endwhile; ?>
 <?php endif; ?>   

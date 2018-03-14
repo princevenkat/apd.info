@@ -37,7 +37,7 @@ $location = get_sub_field('art_location');
 $image = get_sub_field('art_image');
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'full' );
 ?>
-              <div class="big_thumb gallery"> <a href="<?php echo esc_url( $img_src ); ?>" rel="prettyPhoto[gallery]" title="<?php echo $art_copyright; ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive" /></a> <span class="image_copyright"><?php echo $art_title; ?>
+              <div class="big_thumb gallery"> <a href="<?php echo esc_url( $img_src ); ?>" rel="prettyPhoto[gallery]" title="<?php echo $art_copyright; ?>"><img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive average-background-colorize" /></a> <span class="image_copyright"><?php echo $art_title; ?>
                 <copy><?php echo $art_copyright; ?></copy>
                 </span> </div>
               <?php endwhile; ?>
@@ -105,7 +105,7 @@ while( have_rows('art_details', $prev->ID) ): the_row();
 $image = get_sub_field('art_image', $prev->ID);
 $img_src = wp_get_attachment_image_url( $image[ 'ID' ], 'medium' );
 ?>
-                        <img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive" />
+                        <img src="<?php echo esc_url( $img_src ); ?>" alt="<?php echo $art_title; ?>" class="img-responsive average-background-colorize" />
                         <?php endwhile; ?>
                         <?php endif; ?>
                         </a> </div>
