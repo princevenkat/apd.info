@@ -73,6 +73,14 @@ jQuery("document").ready(function($){
         animate: true,
         animateIn: 'fadeInUp'
   });
+  $("#loadmore").loadMore({
+        selector: 'li',
+        loadBtn: '#btn',
+        limit: 45,
+        load: 15,
+        animate: true,
+        animateIn: 'fadeInUp'
+  });
 
 });
 

@@ -55,7 +55,7 @@
       </div>
       <div class="col-sm-6 hidden-xs">
         <div class="logo_right pull-right">
-          <div class="left"><a href="https://www.adventisten.de/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/apd-right.svg" /></a></div>
+          <div class="left"><a href="https://www.adventisten.de/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/sta-logo.svg" /></a></div>
           <div class="right"><?php echo $right_text; ?></div>
         </div>
       </div>
